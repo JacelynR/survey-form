@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+        <h1 id="title">Superhero Hero Survey</h1>
+        </header>
+        <body>
+        
+          <p id="description">Choose your favorite Superhero and tell us what makes them best!</p>
+        
+        <form id="survey-form" method='GET' action="/action_page.php">
+          <fieldset>
+            <label id="name-label">Name: </input>
+          <input id="name" name="firstname" type="text" class="input-field" placeholder="Enter your Name" required></input>
+          <br>
+          
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></input>
+          <br>
+          
+          <label id="number-label" for="age">Age: </label>
+          <input id="number" class="input-field" name="age" min="1" max="100" type="number" placeholder="Age"></input>
+         <br>
+          
+          <div>
+            <p><strong>Who is your favorite Superhero?</strong></p
+              <form>
+              <select id="dropdown">
+                <option value="1">Wonder Woman</option>
+                <option value="2">Black Panther</option>
+                <option value="3">The Hulk</option>
+                <option value="4">Captain Marvel</option>
+                <option value="5">Superman</option>
+                <option value="6">The Flash</option>
+                <option value="7">Aquaman</option>
+                <option value="8">Thor</option>
+                <option value="9">Captain America</option>
+                <option value="10">Black Widow</option>
+                <option value="11">Iron Man</option>
+                <option value="12">Spider Man</option>
+              </select>
+            </form>
+          </div>
+        <br>
+        
+        <div>
+        <form>
+          <p><strong>Tell us why this is your favorite Superhero:</strong></p>
+          <textarea id="text" name="comments" placeholder="Put your answer here..."></textarea>
+        </form>
+        </div>
+        <br>
+        <div id="checks">
+          <p><strong>Tell us which superpowers you would choose to have:</strong></p>
+          <form id="check" name="check">
+            <ul>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Super Strength"/>Super Strength</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Control the Weather"/>Control the Weather</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Flight"/>Flight</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Telekinesis"/>Telekinesis</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Super Speed"/>Super Speed</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Shape Shifting"/>Shape Shifting</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Invisibility"/>Invisibility</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Time Travel">Time Travel</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Teleportation">Teleportation</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Invulnerability"/>Invulnerability</li>
+              <li class="checkbox"><input type="checkbox" name="choose" value="Something Else">Something Else</input></li>
+          </ul>
+          
+          </form>
+          
+        </div>
+        
+        
+        <div>
+          <p class="mailing"><strong>Would you like to be part of our mailing list?</strong></p>
+        <form id="radio">
+          <label><input type="radio" name="recommend-a-friend" value="Yes"/>Yes</label>
+          <label><input type="radio" name="recommend-a-friend" value="No"/>No</label>
+          <label><input type="radio" name="recommend-a-friend" value="remind-me-later"/>Remind Me Later</label>    
+        </form>
+        </div>
+          
+        <div id="submit-button">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+        
+        
+          
+          
+              </fieldset>
+            </form> 
+        <footer>Coded by Jacelyn R</footer>
+        
+          </div>
+        </body>
+        
+        <!--Form Tester-->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+    
+</body>
+</html>
